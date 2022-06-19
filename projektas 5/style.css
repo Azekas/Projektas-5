@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('https://user-images.githubusercontent.com/2388823/107261098-bf287080-69f3-11eb-829c-d8884e26b758.png') ;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+nav:hover a{
+    opacity: 0.4;
+}
+a { 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 1.5em;
+    margin: 25px;
+    font-family: Fascinate;
+    line-height: 40px;
+    transition: 0.8s;
+
+
+}
+nav a:hover{
+    opacity:1;
+}
+p {
+    margin-top: 100px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Fascinate;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, aliceblue, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: inherit;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  
+  div{
+    
+    text-align: center;
+    font-size: 2em;
+    font-style: bold;
+    font-family: Fascinate;
+    width: 200px;
+    line-height: 200px;
+    color: rebeccapurple;
+    display:inline-block;
+    margin-top: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.translate:hover {
+    transform: translateX(-50px);
+    background-image:url("image-1.png");
+  }
+
+.rotate:hover {
+    transform: rotate(360deg);
+    background-image:url("image-2.png") ;
+}
+.scale:hover {
+    transform: scale(0.8);
+    background-image:url("image-3.png") ;
+}
